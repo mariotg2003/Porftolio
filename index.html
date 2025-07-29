@@ -8,182 +8,153 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Personal Portfolio</title>
+    <title>Mi Portafolio</title>
   </head>
   <body>
-    <div class="col-12 col-md-12 titulo mt-3 w-75 mx-auto">
-      Welcome to my Portfolio!
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-8 text-center">
-        <div class="titulo">Who am I?</div>
-        <div class="information">
-          Developer with two years of experience, full availability, strong
-          motivation, and a high sense of responsibility. Began professional
-          career through internships during Higher Vocational Training in Web
-          Application Development. <br /><br />
-          Proactive individual with empathetic listening skills, committed to
-          continuous learning and personal and professional growth. Motivated to
-          contribute to the development of innovative solutions while
-          strengthening knowledge and skills in the technology field.
+    <header class="text-center py-4 bg-light shadow-sm">
+      <h1 class="display-4 fw-bold">Welcome to my Portfolio!</h1>
+      <nav>
+        <div id="social-links" class="d-flex justify-content-center gap-3 mt-3">
+          <a class="social-div" href="https://www.instagram.com/mariiotirado_/">
+            Instagram
+          </a>
+          <a class="social-div" href="https://x.com/mariiotirado"> Twitter </a>
+          <a
+            class="social-div"
+            href="https://www.linkedin.com/in/mario-tirado-gallardo-b31383286/"
+          >
+            LinkedIn
+          </a>
+          <a class="social-div" href="https://github.com/mariotg2003">
+            GitHub
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="section-title">Who am I?</h2>
+          <p class="lead">
+            Developer with two years of experience, full availability, strong
+            motivation, and a high sense of responsibility. Began professional
+            career through internships during Higher Vocational Training in Web
+            Application Development.
+          </p>
+          <p class="lead">
+            Proactive individual with empathetic listening skills, committed to
+            continuous learning and personal and professional growth. Motivated
+            to contribute to the development of innovative solutions while
+            strengthening knowledge and skills in the technology field.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
-        <img
-          src="Img/foto.png"
-          alt="Profile Picture"
-          class="img-fluid rounded-circle mx-auto mt-5"
-        />
-      </div>
-      <div class="col-12 col-sm-12 col-md-9 col-lg-9">
-        <h1 class="titulo">Experience</h1>
-        <div class="text-center experiencia">
-          <div class="titulo">Backend Developer</div>
-          <br />
-          <p>
-            <strong
-              ><a href="https://www.isotrol.com/es"
-                >ISOTROL (SEVILLA)</a
-              ></strong
-            >
-          </p>
-          <p><strong>2023 - Nowadays</strong></p>
-          <div class="information">
-            Development of Python code for large-scale data extraction and
-            subsequent processing according to technical specifications, aimed
-            at visualizing the data in various types of charts within the APM
-            product.
+    </section>
+
+    <section class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center mb-4 mb-md-0">
+          <img
+            id="profile-picture"
+            src="Img/foto.png"
+            alt="Profile Picture"
+            class="img-fluid rounded-circle shadow"
+            style="max-width: 200px"
+          />
+        </div>
+        <div class="col-md-9">
+          <h2 class="section-title">Experience</h2>
+          <div class="card p-3 shadow-sm">
+            <h4 class="fw-bold">Backend Developer</h4>
+            <p class="mb-1">
+              <strong
+                ><a href="https://www.isotrol.com/es" target="_blank"
+                  >ISOTROL (Sevilla)</a
+                ></strong
+              >
+            </p>
+            <p><strong>2023 - Present</strong></p>
+            <p>
+              Development of Python code for large-scale data extraction and
+              subsequent processing according to technical specifications, aimed
+              at visualizing the data in various types of charts within the APM
+              product.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-12 titulo mt-3 w-75 mx-auto">Studies</div>
-    <div class="row mx-auto justify-content-center">
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 study-card">
-        <div class="card-body">
-          <h5 class="card-title">
-            Grado superior en desarrollo de aplicaciones web
-          </h5>
-          <h6 class="card-subtitle mb-2s">
-            <strong>(2021 - 2023)</strong>
-          </h6>
-          <p class="card-text mt-3">I.E.S. Velázquez (Seville)</p>
-          <a href="https://iesvelazquez.org/" class="btn btn-primary"
-            >View Site</a
-          >
+    </section>
+
+    <section class="container mt-5">
+      <h2 class="section-title text-center">Studies</h2>
+      <div class="row justify-content-center">
+        <!-- Tarjetas de estudios -->
+        <!-- Reutilizable como componente -->
+        <div class="col-md-4 mb-4">
+          <div class="card study-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                Grado Superior en Desarrollo de Aplicaciones Web
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">(2021 - 2023)</h6>
+              <p class="card-text">I.E.S. Velázquez (Seville)</p>
+              <a
+                href="https://iesvelazquez.org/"
+                target="_blank"
+                class="btn btn-primary"
+                >View Site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card study-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Bachillerato en Ciencias y Tecnología</h5>
+              <h6 class="card-subtitle mb-2 text-muted">(2019 - 2021)</h6>
+              <p class="card-text">I.E.S. Ponce de León (Utrera)</p>
+              <a
+                href="https://www.iesponcedeleon.es/p/inicio.html"
+                target="_blank"
+                class="btn btn-primary"
+                >View Site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card study-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Educación Secundaria Obligatoria</h5>
+              <h6 class="card-subtitle mb-2 text-muted">(2015 - 2019)</h6>
+              <p class="card-text">I.E.S. Ponce de León (Utrera)</p>
+              <a
+                href="https://www.iesponcedeleon.es/p/inicio.html"
+                target="_blank"
+                class="btn btn-primary"
+                >View Site</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 study-card">
-        <div class="card-body">
-          <h5 class="card-title">Bachillerato en ciencias y tecnología</h5>
-          <h6 class="card-subtitle mb-2s">
-            <strong>(2019 - 2021)</strong>
-          </h6>
-          <p class="card-text mt-3">I.E.S. Ponce de León (Utrera)</p>
-          <a
-            href="https://www.iesponcedeleon.es/p/inicio.html"
-            class="btn btn-primary"
-            >View site</a
-          >
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 study-card">
-        <div class="card-body">
-          <h5 class="card-title">Educación secundaria obligatoria</h5>
-          <h6 class="card-subtitle mb-2s">
-            <strong>(2015 - 2019)</strong>
-          </h6>
-          <p class="card-text mt-3">I.E.S. Ponce de León (Utrera)</p>
-          <a
-            href="https://www.iesponcedeleon.es/p/inicio.html"
-            class="btn btn-primary"
-            >View site</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 titulo mt-3 w-75 mx-auto">Certifications</div>
-    <div class="cert-cards-container d-flex overflow-auto gap-3 py-3">
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">Linkdn Learning</h5>
-          <p class="card-text">DOMINA PYTHON:INTELIGENCIA ARTIFICIAL</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">
-            CURSO DE MANIPULACIÓN DEL DOM DESDE JAVASCRIPT
-          </p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">
-            PROGRAMACIÓN ASÍNCRONA CON PROMISES EN JAVASCRIPT
-          </p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">
-            CURSO DE TRATAMIENTO DE DATOS CON PANDAS Y NUMPY
-          </p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">CURSO DE PYTHON 3</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">
-            CURSO DE PYTHON: APRENDE A PROGRAMAR EN PYTHON 3
-          </p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">CURSO DE JAVASCRIPT PRINCIPIANTE</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">CURSO DE JAVASCRIPT INTERMEDIO</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">CURSO DE JAVASCRIPT AVANZADO</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-      <div class="card col-12 col-md-3 col-sm-12 mt-3 cert-card">
-        <div class="card-body">
-          <h5 class="card-title">OPENWEBINARS</h5>
-          <p class="card-text">CURSO DE HTML5 Y CSS 3</p>
-          <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-      </div>
-    </div>
+    </section>
+
+    <section class="container mt-5">
+      <h2 class="section-title text-center">Certifications</h2>
+      <div
+        class="d-flex flex-nowrap overflow-auto gap-4 py-3 justify-content-center"
+        id="cursos"
+      ></div>
+    </section>
+
+    <footer class="text-center py-4 mt-5 bg-light">
+      <p class="mb-0">
+        &copy; 2025 - Mario Tirado Gallardo. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="logic.js"></script>
   </body>
 </html>

@@ -1,57 +1,107 @@
-.titulo {
-  font-size: 2rem;
-  margin-top: 20px;
-  font-weight: bold;
-  box-shadow: 6px 3px 5px rgba(0, 0, 0, 0.2);
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   text-align: center;
-  background-color: #f9f9f9bd;
-}
-
-.study-card {
-  text-align: center;
-  margin: 2%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-color: rgb(134, 212, 238);
-}
-
-.study-card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.cert-card {
-  text-align: center;
-  margin: 2%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-color: lightgreen;
-}
-
-.cert-card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.experiencia {
-  text-align: center;
-  margin-left: 3%;
-  margin-right: 3%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-}
-
-.information {
-  text-align: center;
-  margin: 2%;
-  padding-bottom: 2%;
+  color: #333;
 }
 
 body {
   scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
-  background-color: lightblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f0fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+.study-card,
+.cert-card,
+.experiencia {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.study-card:hover,
+.cert-card:hover,
+.experiencia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.study-card {
+  background-color: #d6ecfa;
+  text-align: center;
+}
+
+.cert-card {
+  background-color: #d4f7d4;
+  text-align: center;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.experiencia {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.information {
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 800px;
+  line-height: 1.6;
+  color: #444;
+}
+
+img.rounded-circle {
+  border: 4px solid #ddd;
+}
+
+footer {
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-div {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  padding: 1%;
+}
+
+.social-div:hover {
+  transform: scale(1.05);
+  background-color: #cce5ff;
+}
+
+#profile-picture:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 40%;
+  margin: 2rem auto;
+  text-align: center;
 }

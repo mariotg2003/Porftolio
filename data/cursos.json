@@ -1,0 +1,28 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "title": "Introduction to Front-End Development",
+      "description": "META",
+      "duration": "14/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/A6M8710CS1T7",
+      "level": "Principiante"
+    },
+    {
+      "id": 2,
+      "title": "Tools for Data Science",
+      "description": "IBM",
+      "duration": "20/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/ZCC2MDCJJKOL",
+      "level": "Intermedio"
+    },
+    {
+      "id": 3,
+      "title": "What is Data Science?",
+      "description": "IBM",
+      "duration": "09/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/A6M8710CS1T7",
+      "level": "Avanzado"
+    }
+  ]
+}
