@@ -80,9 +80,8 @@ a:hover {
   display: inline-block;
   transition: transform 0.3s ease;
   cursor: pointer;
-  width: 10%;
-  text-align: center;
-  padding: 1%;
+  width: 100%;
+  margin-top: 2%;
 }
 
 .social-div:hover {
@@ -104,4 +103,15 @@ a:hover {
   max-width: 40%;
   margin: 2rem auto;
   text-align: center;
+}
+
+#social-links {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+#download-cv {
+  color: white;
 }
