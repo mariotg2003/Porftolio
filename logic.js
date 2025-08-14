@@ -16,11 +16,10 @@ function leerJson(ruta) {
     });
 }
 
-function mostrarDatos(datos) {
+function mostrarDatosCursos(datos) {
   var divCursos = document.getElementById("cursos");
   var cursos = datos.cursos;
 
-  console.log(cursos);
   cursos.forEach((curso) => {
     var card = document.createElement("div");
     card.className = "card cert-card";
@@ -35,17 +34,17 @@ function mostrarDatos(datos) {
   });
 }
 
-function cargarDatos() {
+function cargarDatosCursos() {
   leerJson("data/cursos.json")
     .then((datos) => {
-      mostrarDatos(datos);
+      mostrarDatosCursos(datos);
     })
     .catch((error) => {
       console.error("Error al cargar los datos:", error);
     });
 }
 
-cargarDatos();
+cargarDatosCursos();
 
 //FORM GMAIL
 imagen = document.getElementById("profile-picture");
@@ -62,3 +61,36 @@ imagen.addEventListener("click", function () {
     "status=no"
   );
 });
+
+// Projects Section
+function mostrarDatosProyecto(datos) {
+  var divProyectos = document.getElementById("proyectos");
+  console.log(datos);
+  var proyecto = datos.proyecto;
+
+  console.log(proyecto);
+  proyecto.forEach((curso) => {
+    var card = document.createElement("div");
+    card.className = "card cert-card";
+    card.innerHTML = `
+          <div class="card-body">
+            <h5 class="card-title">${curso.title}</h5>
+            <p class="card-text">Issued by: <strong>${curso.description}</strong> </br> ${curso.duration}</p>
+            <a href="${curso.link}" class="btn btn-primary">View Certification</a>
+          </div>
+    `;
+    divProyectos.appendChild(card);
+  });
+}
+
+function cargarDatosProyectoss() {
+  leerJson("data/proyectos.json")
+    .then((datos) => {
+      mostrarDatosProyecto(datos);
+    })
+    .catch((error) => {
+      console.error("Error al cargar los datos:", error);
+    });
+}
+
+cargarDatosProyectoss();

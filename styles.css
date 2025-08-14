@@ -115,3 +115,9 @@ a:hover {
 #download-cv {
   color: white;
 }
+
+#proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
