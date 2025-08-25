@@ -66,7 +66,7 @@ imagen.addEventListener("click", function () {
 function mostrarDatosProyecto(datos) {
   var divProyectos = document.getElementById("proyectos");
   console.log(datos);
-  var proyecto = datos.proyecto;
+  var proyecto = datos.proyectos;
 
   console.log(proyecto);
   proyecto.forEach((curso) => {
@@ -75,7 +75,7 @@ function mostrarDatosProyecto(datos) {
     card.innerHTML = `
           <div class="card-body">
             <h5 class="card-title">${curso.title}</h5>
-            <p class="card-text">Issued by: <strong>${curso.description}</strong> </br> ${curso.duration}</p>
+            <p class="card-text">Issued by: <strong>${curso.description}</strong></p>
             <a href="${curso.link}" class="btn btn-primary">View Certification</a>
           </div>
     `;
