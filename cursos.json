@@ -1,0 +1,68 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "title": "Introduction to Front-End Development",
+      "description": "META",
+      "duration": "14/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/A6M8710CS1T7",
+      "level": "Principiante"
+    },
+    {
+      "id": 2,
+      "title": "Tools for Data Science",
+      "description": "IBM",
+      "duration": "20/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/ZCC2MDCJJKOL",
+      "level": "Intermedio"
+    },
+    {
+      "id": 3,
+      "title": "What is Data Science?",
+      "description": "IBM",
+      "duration": "09/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/A6M8710CS1T7",
+      "level": "Avanzado"
+    },
+    {
+      "id": 4,
+      "title": "Data Science Methodology",
+      "description": "IBM",
+      "duration": "31/07/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/CTNDUKMMC3XW",
+      "level": "Avanzado"
+    },
+    {
+      "id": 4,
+      "title": "Programming with JavaScript",
+      "description": "IBM",
+      "duration": "12/08/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/92ZPXAH5PVRM",
+      "level": "Avanzado"
+    },
+    {
+      "id": 5,
+      "title": "Python for Data Science, AI & Development",
+      "description": "IBM",
+      "duration": "25/08/2025",
+      "link": "https://www.coursera.org/account/accomplishments/verify/VIY28KBHZDSX",
+      "level": "Avanzado"
+    },
+    {
+      "id": 6,
+      "title": "Version Control",
+      "description": "Meta",
+      "duration": "03/09/25",
+      "link": "https://www.coursera.org/account/accomplishments/verify/1YMC9OXOOKLX",
+      "level": "Avanzado"
+    },
+    {
+      "id": 7,
+      "title": "Python Project for Data Science",
+      "description": "IBM",
+      "duration": "11/09/25",
+      "link": "https://www.coursera.org/account/accomplishments/verify/CZC6XTW0ZVU1",
+      "level": "Avanzado"
+    }
+  ]
+}
