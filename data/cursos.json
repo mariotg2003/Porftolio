@@ -33,7 +33,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Programming with JavaScript",
       "description": "IBM",
       "duration": "12/08/2025",
@@ -41,7 +41,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Python for Data Science, AI & Development",
       "description": "IBM",
       "duration": "25/08/2025",
@@ -49,7 +49,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Version Control",
       "description": "Meta",
       "duration": "03/09/25",
@@ -57,7 +57,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Python Project for Data Science",
       "description": "IBM",
       "duration": "11/09/25",
@@ -65,7 +65,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Databases and SQL for Data Science with Python",
       "description": "IBM",
       "duration": "26/09/25",
@@ -73,7 +73,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "HTML and CSS in Depth",
       "description": "Meta",
       "duration": "23/10/25",
@@ -81,7 +81,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "React Basics",
       "description": "Meta",
       "duration": "19/11/25",
@@ -89,7 +89,7 @@
       "level": "Avanzado"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "Advanced React",
       "description": "Meta",
       "duration": "09/03/26",
@@ -97,11 +97,19 @@
       "level": "Avanzado"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "Principles of UX/UI Design",
       "description": "Meta",
       "duration": "09/04/26",
       "link": "https://www.coursera.org/account/accomplishments/verify/IE3R44UQEY8C",
+      "level": "Avanzado"
+    },
+    {
+      "id": 14,
+      "title": "Coding Interview Preparation",
+      "description": "Meta",
+      "duration": "30/07/26",
+      "link": "https://www.coursera.org/account/accomplishments/verify/BT6PCGZFTVMB",
       "level": "Avanzado"
     }
   ]
