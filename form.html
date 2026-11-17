@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,53 +8,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>FormGmail</title>
+    <title>Contact Mario</title>
   </head>
   <body>
-    <div class="container col-12 mt-5 content-center" id="form">
-      <form>
-        <div class="form-group mb-3">
-          <label for="name">Name:</label><br />
+    <main class="contact-form" id="form">
+      <p class="contact-eyebrow">Get in touch</p>
+      <h1>Let’s work together.</h1>
+      <p class="contact-intro">
+        Send me a message and I’ll get back to you as soon as I can.
+      </p>
+      <form
+        action="https://formsubmit.co/mariotirado2003@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New portfolio message" />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="text"
+          name="_honey"
+          tabindex="-1"
+          autocomplete="off"
+          class="contact-honeypot"
+          aria-hidden="true"
+        />
+        <div class="form-group">
+          <label for="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Nombre"
+            placeholder="Your name"
+            autocomplete="name"
+            maxlength="120"
             required
           />
         </div>
-        <div class="form-group mb-3">
-          <label for="email">Email:</label><br />
+        <div class="form-group">
+          <label for="email">Email</label>
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            maxlength="254"
             required
           />
         </div>
-        <div class="form-group mb-3">
-          <label for="subject">Subject:</label><br />
+        <div class="form-group">
+          <label for="subject">Subject</label>
           <input
             type="text"
             id="subject"
             name="subject"
-            placeholder="Subject"
+            placeholder="What would you like to discuss?"
+            maxlength="160"
             required
           />
         </div>
-        <div class="form-group mb-3">
-          <label for="message">Message:</label>
+        <div class="form-group">
+          <label for="message">Message</label>
           <textarea
-            class="form-control"
-            id="mensaje"
-            rows="4"
-            placeholder="Escribe tu mensaje aquí..."
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            maxlength="5000"
+            required
           ></textarea>
         </div>
-        <button type="reset" class="btn btn-primary">Reset</button>
-        <button type="submit" class="btn btn-primary ms-5">Send</button>
+        <button type="submit" class="contact-submit">
+          Send message <span aria-hidden="true">↗</span>
+        </button>
+        <p class="contact-privacy">
+          Messages are processed by FormSubmit to deliver them by email.
+        </p>
       </form>
-    </div>
+    </main>
   </body>
 </html>
