@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import coursesUrl from "../../data/cursos.json?url&no-inline";
 import SectionHeading from "./SectionHeading.jsx";
 
-function CertificationsSection() {
+function CertificationsSection({ text }) {
   const [courses, setCourses] = useState([]);
-  const [error, setError] = useState("");
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -26,7 +26,7 @@ function CertificationsSection() {
       } catch (loadError) {
         if (loadError.name !== "AbortError") {
           console.error("Error al cargar las certificaciones:", loadError);
-          setError("No se pudieron cargar las certificaciones.");
+          setError(true);
         }
       }
     }
@@ -39,14 +39,14 @@ function CertificationsSection() {
     <section className="content-section" aria-labelledby="certifications-title">
       <div className="site-container">
         <SectionHeading
-          eyebrow="Aprendizaje continuo"
-          title="Certifications"
-          description="Cursos y certificaciones que complementan mi experiencia."
+          eyebrow={text.eyebrow}
+          title={text.title}
+          description={text.description}
           id="certifications-title"
         />
         {error ? (
           <p role="alert" className="load-error">
-            {error}
+            {text.error}
           </p>
         ) : (
           <div className="certifications-track" id="cursos">
@@ -61,7 +61,7 @@ function CertificationsSection() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View certification <span aria-hidden="true">↗</span>
+                  {text.visit} <span aria-hidden="true">↗</span>
                 </a>
               </article>
             ))}

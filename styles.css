@@ -113,6 +113,28 @@ a:focus-visible {
   gap: 8px;
 }
 
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-selector select {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--blue-dark);
+  font: inherit;
+  font-size: 0.83rem;
+}
+
+.language-selector select:focus-visible {
+  outline: 3px solid #74a8e8;
+  outline-offset: 4px;
+}
+
 .social-link {
   padding: 6px 12px;
   border: 1px solid transparent;
@@ -459,6 +481,10 @@ a:focus-visible {
   box-shadow: 0 12px 35px rgba(28, 73, 132, 0.045);
 }
 
+.experience-card + .experience-card {
+  margin-top: 17px;
+}
+
 .experience-topline {
   display: flex;
   align-items: flex-start;
@@ -536,6 +562,14 @@ a:focus-visible {
   border-radius: 13px;
   background: var(--paper);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.skills-card {
+  min-height: 0;
+}
+
+.skills-card .study-school {
+  margin-bottom: 0;
 }
 
 .study-card:hover,
