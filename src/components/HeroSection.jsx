@@ -1,10 +1,10 @@
 import profilePicture from "../../Img/foto.png";
 import cvUrl from "../../data/CV.pdf";
 
-function HeroSection() {
+function HeroSection({ text, language }) {
   function openContactForm() {
     window.open(
-      "form.html",
+      `form.html?lang=${language}`,
       "_blank",
       "width=800,height=560,resizable=no,scrollbars=no,toolbar=no,location=no,status=no"
     );
@@ -16,14 +16,13 @@ function HeroSection() {
         <div className="hero-copy">
           <p className="hero-eyebrow">
             <span className="availability-dot" aria-hidden="true" />
-            Backend Developer <span aria-hidden="true">·</span> Sevilla, Spain
+            {text.role} <span aria-hidden="true">·</span> {text.location}
           </p>
           <h1>
-            Hi, I’m <span>Mario Tirado.</span>
+            {text.greeting} <span>Mario Tirado.</span>
           </h1>
           <p className="hero-summary">
-            I build data-driven solutions and reliable software, turning complex
-            information into something useful.
+            {text.summary}
           </p>
           <div className="hero-actions">
             <a
@@ -31,42 +30,42 @@ function HeroSection() {
               download="MarioTirado_CV"
               className="button button-primary"
             >
-              Download my CV <span aria-hidden="true">↓</span>
+              {text.download} <span aria-hidden="true">↓</span>
             </a>
             <a href="#experience" className="button button-secondary">
-              Explore my experience
+              {text.explore}
             </a>
           </div>
-          <ul className="skill-list" aria-label="Areas of experience">
+          <ul className="skill-list" aria-label={text.skillsLabel}>
+            <li>React</li>
             <li>Python</li>
-            <li>Data processing</li>
-            <li>Web development</li>
+            <li>AWS</li>
           </ul>
         </div>
 
         <div className="profile-card">
           <span className="profile-card-decoration" aria-hidden="true" />
-          <p className="profile-card-eyebrow">A closer look</p>
+          <p className="profile-card-eyebrow">{text.closerLook}</p>
           <button
             type="button"
             className="profile-trigger"
             onClick={openContactForm}
-            aria-label="Open contact form"
+            aria-label={text.openContact}
           >
             <img id="profile-picture" src={profilePicture} alt="Mario Tirado" />
           </button>
           <div className="profile-caption">
             <div>
-              <span className="profile-caption-label">Currently</span>
-              <span className="profile-caption-role">Backend Developer</span>
-              <span className="profile-caption-company">ISOTROL · Sevilla</span>
+              <span className="profile-caption-label">{text.currently}</span>
+              <span className="profile-caption-role">{text.role}</span>
+              <span className="profile-caption-company">NTT DATA · Sevilla</span>
             </div>
             <button
               type="button"
               className="contact-shortcut"
               onClick={openContactForm}
             >
-              Get in touch <span aria-hidden="true">↗</span>
+              {text.contact} <span aria-hidden="true">↗</span>
             </button>
           </div>
         </div>

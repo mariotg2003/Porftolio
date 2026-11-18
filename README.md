@@ -21,6 +21,8 @@ directorio de publicación.
 
 La página principal es la aplicación React. La compilación incluye también
 `form.html` y los datos de `data/cursos.json` para cargar las certificaciones.
+El selector de idioma cambia el contenido entre inglés y español y abre el
+formulario en el idioma seleccionado.
 
 El formulario utiliza Netlify Forms. Antes de desplegar, activa la detección de
 formularios en Netlify, en **Forms > Enable form detection**. Tras el despliegue,
