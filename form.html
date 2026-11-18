@@ -18,14 +18,14 @@
         Send me a message and I’ll get back to you as soon as I can.
       </p>
       <form
-        action="https://formsubmit.co/mariotirado2003@gmail.com"
+        name="contact"
         method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="_subject" value="New portfolio message" />
-        <input type="hidden" name="_template" value="table" />
         <input
           type="text"
-          name="_honey"
+          name="bot-field"
           tabindex="-1"
           autocomplete="off"
           class="contact-honeypot"
@@ -81,7 +81,7 @@
           Send message <span aria-hidden="true">↗</span>
         </button>
         <p class="contact-privacy">
-          Messages are processed by FormSubmit to deliver them by email.
+          Messages are processed by Netlify to deliver them by email.
         </p>
       </form>
     </main>
