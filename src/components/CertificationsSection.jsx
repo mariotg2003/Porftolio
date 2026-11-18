@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import coursesUrl from "../../data/cursos.json?url&no-inline";
 import SectionHeading from "./SectionHeading.jsx";
 
 function CertificationsSection() {
@@ -10,7 +11,7 @@ function CertificationsSection() {
 
     async function loadCourses() {
       try {
-        const response = await fetch("data/cursos.json", {
+        const response = await fetch(coursesUrl, {
           signal: controller.signal,
         });
         if (!response.ok) {

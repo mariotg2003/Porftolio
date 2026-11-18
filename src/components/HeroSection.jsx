@@ -1,3 +1,6 @@
+import profilePicture from "../../Img/foto.png";
+import cvUrl from "../../data/CV.pdf";
+
 function HeroSection() {
   function openContactForm() {
     window.open(
@@ -24,7 +27,7 @@ function HeroSection() {
           </p>
           <div className="hero-actions">
             <a
-              href="data/CV.pdf"
+              href={cvUrl}
               download="MarioTirado_CV"
               className="button button-primary"
             >
@@ -50,7 +53,7 @@ function HeroSection() {
             onClick={openContactForm}
             aria-label="Open contact form"
           >
-            <img id="profile-picture" src="Img/foto.png" alt="Mario Tirado" />
+            <img id="profile-picture" src={profilePicture} alt="Mario Tirado" />
           </button>
           <div className="profile-caption">
             <div>
