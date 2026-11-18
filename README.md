@@ -22,5 +22,8 @@ directorio de publicación.
 La página principal es la aplicación React. La compilación incluye también
 `form.html` y los datos de `data/cursos.json` para cargar las certificaciones.
 
-El formulario envía los mensajes mediante FormSubmit. La primera vez, el
-destinatario debe confirmar la activación desde el correo que envía el servicio.
+El formulario utiliza Netlify Forms. Antes de desplegar, activa la detección de
+formularios en Netlify, en **Forms > Enable form detection**. Tras el despliegue,
+los mensajes estarán disponibles en **Forms**. Para recibirlos por correo,
+configura una notificación en **Forms > Submission notifications**.
+El envío del formulario requiere Netlify y no funciona con `npm run preview`.
